@@ -1,0 +1,11 @@
+/* Serif, sans-serif, monospace, cursive, fantasy*/
+/*Fallback yedek yazı tipi virgulle belirtilir*/
+
+.kutu1{
+    font-family: Madimi One, sans-serif;
+    /* font-style: italic; */
+    /* font-weight: 900; */
+    /* font-variant: small-caps; */
+    /* font-size: 1em; */
+
+}
