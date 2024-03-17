@@ -1,0 +1,57 @@
+/* .box, .box2{
+     width: 100px;
+     height: 100px;
+     background: red;
+     float: left;  /*iki elemanı yanayana getirme 
+}
+
+.clear{
+    clear: both;  /* Çift yönlü alan açmak için, test yazısı kutuların altına gectı
+} */
+
+*{
+  margin: 0;  /* genel sayfa duzenı*/
+  padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+     display: flex; /*elemanları yanyana getırme*/
+
+     /*justify-content: flex-end;  sona atar*/
+
+     justify-content: space-between;  /*boşluklu aralar */
+     justify-content: space-around;  /* koselerden bosluk bırakıp bosluklu ortalar */
+
+     /*justify-content: center; ortalar*/
+
+     flex-wrap: wrap; /* eşit şekilde alt satıra gectı*/
+
+    /* display: inline-flex; iç içe eleman varsa ona ozel olarak tanımlarız*/  
+    /* width: 250px; */
+    height: 100px; 
+    /* background: red; */
+
+    /*flex-direction: column;  div elemanlarını alt alta sıralar */
+   /* flex-direction: row-reverse;  /*div elemanlarını satır sonundan ters sıralar */
+   /* flex-direction: column-reverse;  /*div elemanlarını sütun sonundan ters sıralar */
+    
+}
+
+       /*<div>
+        <h5>Başlık</h5>
+        <p>Paragraf</p>
+       </div>
+       */
+/*.container > div{ 
+    display: flex;  iç içe eleman varsa ona ozel olarak tanımlarız
+}*/
+
+.box{
+    width: 50px;
+    height: 50px;
+    background: #eee;
+}
