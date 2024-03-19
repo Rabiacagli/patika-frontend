@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.flex{
+    display: flex;
+    /* width: 600px;
+    height: 600px;
+    border: 5px solid #000;
+    margin: 50px auto; */
+    gap: 20px; /* elemanlar arası boşluk koyar (ayrı durmalarını sağlar)*/
+
+    column-gap: 40px; /*sütunlar arası bosluk bırakır */
+    row-gap: 20px;    /*satırlar arası bosluk bırakır*/
+
+}
+
+.flex .item{
+    /* width: 100px;  */
+    height: 100px;
+    background: #ddd;
+    /* order: 1;  */
+    /*flex-grow: 1;  kendi içinde genişlemesini sağlar */
+    flex-shrink: 1; /* küçülmesiini sağlar*/
+    flex-basis: 100px; /*taşan elemanları ayarlar */
+}
+
+
+
+
+/* .flex .item:first-child{  /* 1, 5. elemanın yerine gecti
+    order: 5;
+}*/
+
+/*.flex .item:last-child{  /* 5, 1. elemanın yerine gecti kendi aralarında change
+    order: 0;
+} */                              
+                        
+/* elemanlarin kendi içinde satır sıralarını değiştirmek için */
+.flex .item:nth-child(1){order:5}
+/* .flex .item:nth-child(2){order:3; flex-grow: 3;} */
+
+
+/*diğer elemanlara gore daha fazla kuculecek*/
+.flex .item:nth-child(3){order:2; flex-shrink: 3; background: blue;}
+
+/* .flex .item:nth-child(3){
+    order:2;
+    align-self: flex-end;      /*elemana özel değişiklik sona*/
+   /* align-self: center;      elemana özel değişiklik ortala
+} */
+
+.flex .item:nth-child(4){order:1}
+.flex .item:nth-child(5){order:4}

@@ -19,26 +19,29 @@ html, body{
 }
 
 .container{
-     display: flex; /*elemanları yanyana getırme*/
+     display: flex; /*elemanları yanyana getırir Y*/
+     background: #ccc; /*Y*/
+     padding: 0 20px;  /*Y*/
+     justify-content: space-between;  /*boşluklu aralar Y*/
+     height: 400px; /* Y*/
+     width: 200px;
+     align-items: center; /*belirli yüksekliğin içinde ortalar*/
 
+     /* justify-content: space-evenly; satırlar arasında eşit boşluk bırakır */
      /*justify-content: flex-end;  sona atar*/
-
-     justify-content: space-between;  /*boşluklu aralar */
-     justify-content: space-around;  /* koselerden bosluk bırakıp bosluklu ortalar */
-
+     /*justify-content: space-around;  /* koselerden bosluk bırakıp bosluklu ortalar */
      /*justify-content: center; ortalar*/
 
-     flex-wrap: wrap; /* eşit şekilde alt satıra gectı*/
+     flex-direction: column; /*div elemanlarını alt alta sıralar */
+     /* flex-direction: row-reverse;  /*div elemanlarını satır sonundan ters sıralar */
+     /* flex-direction: column-reverse;  /*div elemanlarını sütun sonundan ters sıralar */
+     /*flex-wrap: wrap;  eşit şekilde alt satıra gecer  123 456 789 gibi*/ 
 
-    /* display: inline-flex; iç içe eleman varsa ona ozel olarak tanımlarız*/  
-    /* width: 250px; */
-    height: 100px; 
-    /* background: red; */
-
-    /*flex-direction: column;  div elemanlarını alt alta sıralar */
-   /* flex-direction: row-reverse;  /*div elemanlarını satır sonundan ters sıralar */
-   /* flex-direction: column-reverse;  /*div elemanlarını sütun sonundan ters sıralar */
-    
+     /* display: inline-flex; iç içe eleman varsa ona ozel olarak tanımlarız*/  
+   
+     /* background: red;  */
+     /* align-items: stretch; */    
+     /* align-content: center; */
 }
 
        /*<div>
@@ -52,6 +55,6 @@ html, body{
 
 .box{
     width: 50px;
-    height: 50px;
+    /* height: 50px; */
     background: #eee;
 }
