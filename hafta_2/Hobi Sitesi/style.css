@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: rgb(196, 196, 243, 0.336);
+    color: palevioletred;
+    padding: 10px 0;
+    text-align: center;    
+}
+
+.img-logo {    
+    width: 90px;
+    height: 90px;
+    border-radius: 70%; 
+    float: left;
+    margin-top: 0%;
+    margin-left: 0%;
+    position: absolute; /* Mutlak pozisyon */
+    top: 5px; /* Üst kenara hizala */
+    left: 5px; /* Sol kenara hizala */   
+}
+
+.img-bottom {
+
+    width: 90px;
+    height: 90px;
+    border-radius: 70%; 
+    float: left;
+
+}
+
+nav {
+    
+    background-color: rgb(177, 177, 247) ;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color:  white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.container {
+    
+    margin: 5px;
+    padding: 0 20px;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.content{
+   
+    padding: 20px;
+    margin-bottom: 20px;
+    opacity: 0.8; 
+}
+
+h3,h4{
+    color: palevioletred;
+}
+
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0 auto;
+    
+}
+
+li{
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    
+}
+
+img{
+   height: auto;
+   display: block;
+   gap: 0;
+   border-radius: 100%;
+   
+}
+
+footer {
+    position: fixed; /* Footer'ı sabit tutar */
+    padding: 0;
+    bottom: 0; /* Sayfanın en altına hizalar */
+    width: 100%; /* Sayfa genişliği kadar genişletir */
+    height: 5%;
+    background-color: gray;
+    color: #fff;
+    text-align: center;   
+}
+
+footer p {
+    margin: 3px 0; /* Yukarı ve aşağıda 5 piksel boşluk bırakır */
+    padding: 0 ; /* Sağ ve solunda 10 piksel boşluk bırakır */
+    font-size: 6px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav a {
+        padding: 10px;
+        margin: 5px;
+    }
+}

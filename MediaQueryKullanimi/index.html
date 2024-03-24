@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body,ul{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        .menu{
+            height: 50px;
+            line-height: 50px;
+            width: calc(100% - 30px); /* calc ile kaydırma cubugunu sileriz*/
+            background-color: gray;
+            padding-left: 30px;  /* sadece bunu yazmak aşagıda kaydırma cubugu olusturuyor-tercih edilmez*/
+        }
+
+        li{
+            float: left;   /*li leri yanyana dizer*/
+            margin-right: 20px; /* aralara boşluk*/
+        }
+
+        a{
+            color:white;
+            text-decoration: none;
+        }
+
+        p{
+            font-size: 36px;
+            color: red;
+            background-color: yellow;
+        }
+        
+
+
+        .top{
+            height: 300px;
+            width: 300px;
+            border-radius: 150px;
+            background-color: brown;
+        }
+
+        /*media sorgu bolumu*/
+
+        @media screen and (max-width: 1024px) {   /* style içinde yazılır*/
+            .menu{
+                height: 305px;
+            }
+            li{
+                clear: both; /* media koşullarında altalta gelir*/
+                width: 100%;
+                border-bottom: 1px solid black;
+            }       
+            
+            a{
+                color: red; /* yazı rengi kırmızı olur*/
+            }
+            .top{
+                display: none; /* kaybolur*/
+            }
+
+            p{
+                font-size: 14px;
+                color: black;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: pink;
+            }
+        } 
+
+        @media screen and (max-width: 500px) {   /* 1'den fazla media yazılabilir*/
+            body{
+                background-color: aquamarine;
+            }
+            
+        }
+
+        /* @media (min-width: 768px) and (max-width: 500px)   ) {   /* 1'den fazla media yazılabilir,  bu proje için gecerli değil ama bu şekilde de kullanılabilir.
+            body{
+                background-color: white;
+            }
+            
+        } */
+
+    </style>
+</head>
+<body>
+   <div class="menu">
+    <ul>
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">İletişim</a></li>
+        <li><a href="#">Videolar</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Bize Ulaşın!</a></li>
+    </ul>
+   </div>
+   <div class="top">
+   </div>
+
+   <p>Rabia</p>
+
+</body>
+</html>
