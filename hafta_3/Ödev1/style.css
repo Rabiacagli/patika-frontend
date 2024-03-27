@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecef;
+}
+
+header {
+  background-color: #e9ecef;
+  color: black;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav {
+  background-color: #989da1;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 0 5px;
+}
+
+h3,
+h4 {
+  color:  rgb(56, 54, 54);
+}
+
+.img-logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 70%;
+  float: left;
+  margin-top: 0%;
+  margin-left: 0%;
+  position: absolute; /* Mutlak pozisyon */
+  top: 5px; /* Üst kenara hizala */
+  left: 5px; /* Sol kenara hizala */
+}
+
+.img-bottom {
+  width: 90px;
+  height: 90px;
+  border-radius: 70%;
+  float: left;
+}
+
+footer {
+  position: fixed; /* Footer'ı sabit tutar */
+  padding: 0;
+  bottom: 0; /* Sayfanın en altına hizalar */
+  width: 100%; /* Sayfa genişliği kadar genişletir */
+  height: 5%;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  margin: 3px 0; /* Yukarı ve aşağıda 5 piksel boşluk bırakır */
+  padding: 0; /* Sağ ve solunda 10 piksel boşluk bırakır */
+  font-size: 10px;
+  text-align: center;
+}
+
+img {
+  width: 250px;
+  height: 100px;
+}
+

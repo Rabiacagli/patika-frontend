@@ -1,106 +1,94 @@
 body {
-    position: relative;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  position: relative;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
-
 
 header {
-    background-color: rgba(196, 196, 243, 0.336);
-    color: palevioletred;
-    padding: 10px 0;
-    text-align: center;    
+  background-color: rgba(196, 196, 243, 0.336);
+  color: palevioletred;
+  padding: 10px 0;
+  text-align: center;
 }
 
-
-.img{
-    width: 90px;
-    height: 90px;
-    border-radius: 70%; 
-    float: left;
-    margin-top: 0%;
-    margin-left: 0%;
-    position: absolute; /* Mutlak pozisyon */
-    top: 5px; /* Üst kenara hizala */
-    left: 5px; /* Sol kenara hizala */   
+.img {
+  width: 90px;
+  height: 90px;
+  border-radius: 70%;
+  float: left;
+  margin-top: 0%;
+  margin-left: 0%;
+  position: absolute; /* Mutlak pozisyon */
+  top: 5px; /* Üst kenara hizala */
+  left: 5px; /* Sol kenara hizala */
 }
 
 nav {
-    width: 100%;
-    background-color:rgb(177, 177, 247);
-    text-align: center;
-    padding: 10px 0;
+  width: 100%;
+  background-color: rgb(177, 177, 247);
+  text-align: center;
+  padding: 10px 0;
 }
 
-
-
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 5px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px;
 }
 
 nav a:hover {
-    background-color: #555;
+  background-color: #555;
 }
-
-
 
 section {
-    padding: 20px;
-    margin: 10px;
-    background-color:  #f4f4f4;
-    
+  padding: 20px;
+  margin: 10px;
+  background-color: #f4f4f4;
 }
 
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: auto;
-    color: palevioletred;
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: auto;
+  color: palevioletred;
 }
 
-li{
-    text-align: center;
-    flex: 1;
-    margin: 5px;
-    
+li {
+  text-align: center;
+  flex: 1;
+  margin: 5px;
 }
 
-img{
-   height: auto;
-   display: block;
-   margin: 0 auto;
- border-radius: 30%;
-   
+img {
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 30%;
 }
-h5{
-    font-style: italic;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: sienna;
-    font-size:x-small;
-    
+h5 {
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: sienna;
+  font-size: x-small;
 }
 footer {
-    position: fixed; /* Footer'ı sabit tutar */
-    padding: 0;
-    bottom: 0; /* Sayfanın en altına hizalar */
-    width: 100%; /* Sayfa genişliği kadar genişletir */
-    height: 5%;
-    background-color: gray;
-    color: #fff;
-    text-align: center;   
+  position: fixed; /* Footer'ı sabit tutar */
+  padding: 0;
+  bottom: 0; /* Sayfanın en altına hizalar */
+  width: 100%; /* Sayfa genişliği kadar genişletir */
+  height: 5%;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
 }
 
 footer p {
-    margin: 3px 0; /* Yukarı ve aşağıda 5 piksel boşluk bırakır */
-    padding: 0 ; /* Sağ ve solunda 10 piksel boşluk bırakır */
-    font-size: 6px;
-    text-align: center;
+  margin: 3px 0; /* Yukarı ve aşağıda 5 piksel boşluk bırakır */
+  padding: 0; /* Sağ ve solunda 10 piksel boşluk bırakır */
+  font-size: 6px;
+  text-align: center;
 }
-
-    
